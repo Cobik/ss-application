@@ -1,0 +1,6 @@
+*.iml
+*.log
+*.lst
+.idea
+target
+logs
