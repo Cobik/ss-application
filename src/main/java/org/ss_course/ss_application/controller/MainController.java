@@ -15,4 +15,12 @@ public class MainController {
         String helloStr = "Hello " + name + "!";
         return helloStr;
     }
+
+    @GetMapping("/surname")
+    public String sayHelloWithSurname(@RequestParam(value = "name")String name,
+                                      @RequestParam(value = "surname") String surname) {
+
+        String helloStr = "Hello " + name + " " + surname;
+        return helloStr;
+    }
 }
