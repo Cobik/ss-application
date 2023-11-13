@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/main")
 public class MainController {
 
+    //http://localhost:8080/main/hello?name=Sabuh
     @GetMapping("/hello")
     public String sayHello(@RequestParam(value = "name")String name) {
 
@@ -16,6 +17,7 @@ public class MainController {
         return helloStr;
     }
 
+    //http://localhost:8080/main/surname?name=Sabuhi&surname=Karimov
     @GetMapping("/surname")
     public String sayHelloWithSurname(@RequestParam(value = "name")String name,
                                       @RequestParam(value = "surname") String surname) {
